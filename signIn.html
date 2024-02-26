@@ -19,16 +19,28 @@
         <div class="navbar">
             <h1 class="logo">Nicole .</h1>
 
-            <nav>
-                <ul>
+            <nav class="nav-bar">
+                <ul class="sidebar">
+                    <li  onclick="hideSidebar()"><i class="fa fa-window-close" aria-hidden="true"></i></li>
                     <li> <a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#Blogs">Blogs</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                    <!-- <li><a href=""><Button class="cta">Login</Button></a></li>-->
-                </ul> 
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Skills</a></li>
+                    <li><a href="index.html">portfolio</a></li>
+                    <li><a href="index.html">Blogs</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                  
+                    
+                </ul>
+                <ul>
+                    <li class="hideOnMobile"> <a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="index.html">About</a></li>
+                    <li class="hideOnMobile"><a href="index.html">Skills</a></li>
+                    <li class="hideOnMobile"><a href="index.html">portfolio</a></li>
+                    <li class="hideOnMobile"><a href="index.html">Blogs</a></li>
+                    <li class="hideOnMobile"><a href="index.html">Contact</a></li>
+                    <li class="hide" onclick="showSidebar()""><i class="fa fa-bars" aria-hidden="true"></i></li>
+                </ul>
+              
     
             </nav>
         </div>
@@ -57,5 +69,16 @@
         </div>
        </div>
     </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
