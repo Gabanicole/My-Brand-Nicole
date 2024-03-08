@@ -1,0 +1,16 @@
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.table-container {
+    flex-grow: 1;
+    overflow: auto; /* Add overflow auto for scrolling if needed */
+}
+
+.data-table {
+    width: 100%;
+    height: 100%;
+}

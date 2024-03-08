@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/login.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<title>Nicole</title>
+
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Nicole .</h1>
+
+      <nav class="nav-bar">
+        <ul class="sidebar">
+          <li onclick="hideSidebar()"><i class="fa fa-window-close" aria-hidden="true"></i></li>
+          <li> <a href="index.html">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Skills</a></li>
+          <li><a href="index.html">portfolio</a></li>
+          <li><a href="index.html">Blogs</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+        <ul>
+          <li class="hideOnMobile"> <a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="index.html">About</a></li>
+          <li class="hideOnMobile"><a href="index.html">Skills</a></li>
+          <li class="hideOnMobile"><a href="index.html">portfolio</a></li>
+          <li class="hideOnMobile"><a href="index.html">Blogs</a></li>
+          <li class="hideOnMobile"><a href="index.html">Contact</a></li>
+          <li class="hide" onclick="showSidebar()""><i class="fa fa-bars" aria-hidden="true"></i></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="login">
+      <div class="content">
+        <img src="images/login.png" alt="">
+      </div>
+      <div class="loginForm">
+        <h1 style="text-align: center;">Login</h1>
+        <form action="" class="myForm" onsubmit="return validateForm()">
+          <div class="tbox">
+            <i class="fa fa-user"></i> <input type="email" name="email" id="email" placeholder="Email">
+          </div>
+          <div class="tbox">
+            <i class="fa fa-lock"></i> <input type="password" name="password" id="password" placeholder="Password">
+          </div>
+          <button type="submit" class="cta" id="submit">Login</button>
+        </form>
+        <ul class="social">
+          <span>login with:</span>
+          <li><i class="fa fa-google"></i></li>
+          <li><i class="fa fa-github"></i></li> or <span><a href="signIn.html">Register</a></span>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('.myForm');
+      const email = document.getElementById('email');
+      const password = document.getElementById('password');
+
+      function validateForm() {
+        const emailValue = email.value.trim();
+        const passwordValue = password.value.trim();
+
+        // Email validation using regular expression
+        const emailRegex = /^\w+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+
+        if (emailValue === '') {
+          setError(email, 'Email is required');
+        } else if (!emailRegex.test(emailValue)) {
+          setError(email, 'Invalid email format');
+        } else {
+          setSuccess(email);
+        }
+
+        if (passwordValue === ''){
+
+        }
+</script>
+</body>
+</html>

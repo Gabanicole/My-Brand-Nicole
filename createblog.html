@@ -1,0 +1,75 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <title>Admin Dashboard / Nicole</title>
+        <link rel="stylesheet" href="./css/dashboard.css">
+        <link rel="stylesheet" href="./css/blogdash.css">
+        <link rel="stylesheet" href="./css/creatblog.css">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    </head>
+    <body>
+       <input type="checkbox" id="menu-toggle">
+        <div class="sidebar">
+            <div class="side-header">
+                <h3>N<span>icole</span></h3>
+            </div>
+            
+            <div class="side-content">
+                <div class="profile">
+                    <div class="profile-img bg-img" style="background-image: url(./images/nicole.png)"></div>
+                    <h4>Nicole Munezero</h4>
+                    <small>Software developer</small>
+                </div>
+    
+                <div class="side-menu">
+                    <ul>
+                        <li>
+                           <a href="dashbaord.html">
+                                <span class="las la-home"></span>
+                                <small>Dashboard</small>
+                            </a>
+                        </li>
+                       
+                           <a href="users.html">
+                                <span class="las la-user-alt"></span>
+                                <small>Users</small>
+                            </a>
+                        </li>
+                        <li>
+                           <a href="blogs.html" class="active">
+                                <span class="las la-envelope"></span>
+                                <small>Blogs</small>
+                            </a>
+                        </li>
+                    
+    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <h1 class="title">Add New Blog</h1>
+
+    <form action="" method="">
+        <label for="blog-title">Title:</label>
+        <input type="text" id="blog-title" name="blog-title" required><br><br>
+
+        <label for="blog-image">Image URL:</label>
+        <input type="text" id="blog-image" name="blog-image" required><br><br>
+
+        <label for="blog-content">Content:</label><br>
+        <textarea id="blog-content" name="blog-content" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Add Blog">
+    </form>
+            
+          
+    
+            
+        </div>
+    </body>
+    </html>

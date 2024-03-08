@@ -61,6 +61,10 @@ nav a {
 }
 nav a:hover{
   color: #ff6e00;
+  
+}
+nav a.active{
+  border-bottom: 2px solid #e77518 ;
 }
 .sidebar{
   position: fixed;
@@ -150,6 +154,7 @@ main a{
   border: none;
   font-weight: 700;
   border-radius: 50px;
+  color: #333;
 
 }
 /* about */
