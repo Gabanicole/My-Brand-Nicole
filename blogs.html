@@ -141,4 +141,31 @@
         
     </div>
 </body>
+<script>
+    const json = localStorage.getItem('form');
+    const obj = JSON.parse(json);
+
+    for(key in obj){
+        const markup = 
+        <table>
+                    <tbody>
+                       
+                        <tr>
+                            <td>${key}: ${obj[key]}</td>
+                            <td></td>
+                            <td ></td>
+                            <td></td>
+                            <td>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </td>
+                       
+                        </tr>
+                    </tbody>
+        </table>
+        ;
+        document.getElementById('data').innerHTML += markup;
+
+    }
+</script>
 </html>
